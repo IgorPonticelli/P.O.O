@@ -1,0 +1,57 @@
+a) Quais são os atributos (variáveis) da classe "Placa"?
+R)pais, codigo
+b) Porque os atributos da classe "Placa" são privados?
+R)Para não serem mudados 
+
+c) A classe "Placa" tem método construtor? O que ele faz? Quando
+ele é executado?
+R)Sim, ele garante que a placa esteja no padrão mercosul do Brasil, na classe veiculo.
+
+d) Toda a classe deve ter um método construtor? O que acontece
+quando uma classe não tem método construtor?
+R)Não, não devera ter objeto.
+
+e) O que são métodos “getter” e “setter”? O que os caracteriza?
+R)O setter serve para modificar e get "puxa" o valor atribuido
+
+f) A classe "Placa" tem métodos do tipo "setter"? Por quê?
+R)Para modificar somente se preciso.
+
+g) Quais as implicações em se criar métodos “setter” para todos
+os atributos de uma classe?
+R)Será possivel modificar o valor de todos os atributos
+
+h) Quantos atributos tem a classe "Veiculo"? De que tipo são?
+Algum dos atributos de "Veiculo" indica um relacionamento
+entre as classes?
+R)Dois, do tipo double, sim, com a classe placa
+
+i) Porque os atributos da classe "Veiculo" são privados? Qual a
+vantagem de se manter os atributos das classes privados?
+R)Para tornar mais seguro quando houver a possibilidade de modificação
+
+j) A classe "Veiculo" tem método construtor? O que ele faz?
+Quando é executado?
+R)Sim, Recebe aclassse placa, no app
+
+k) Porque não é necessário criar uma instancia da classe "Placa"
+no construtor da classe "Veiculo"?
+R)Pois já se relacionam
+l) A classe "Veiculo" tem métodos do tipo "setter"? Por quê?
+R)Sim, para a possibildade de mudar de pais
+
+m)Para que serve o modificador "final" no atributo
+"consumoPorLitro"?
+R) 
+
+n) De que maneira funcionam os métodos
+"getCombustivelNoTanque", "abastece" e "dirige"?
+o) Quantas instâncias de que classes são criadas no "main"?
+3) Compile e execute o código.
+4) Certifique-se de ter dominado todo o processo de edição, compilação
+e execução de programas.
+Etapa 2: exercícios de programação
+1) Reescreva o método “main” de maneira que ele receba pelos
+argumentos da linha de comando a placa do veículo, a quantidade de
+combustível que o mesmo deve ser abastecido e a distância que ele
+deve percorrer e imprima: os dados do veículo, a distância
