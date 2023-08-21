@@ -55,3 +55,7 @@ Etapa 2: exercícios de programação
 argumentos da linha de comando a placa do veículo, a quantidade de
 combustível que o mesmo deve ser abastecido e a distância que ele
 deve percorrer e imprima: os dados do veículo, a distância
+
+Aula 16/08
+
+Aula 21/08
