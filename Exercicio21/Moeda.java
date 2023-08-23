@@ -1,3 +1,4 @@
+package Exercicio21;
 public class Moeda{
     private NomeMoeda nome;
     public Moeda(NomeMoeda nome){
