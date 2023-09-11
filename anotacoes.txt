@@ -59,3 +59,6 @@ deve percorrer e imprima: os dados do veículo, a distância
 Aula 16/08
 
 Aula 21/08
+
+Aula 11/09
+interface é publica e asbtrato, não pode ter atributo
