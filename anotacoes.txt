@@ -62,3 +62,64 @@ Aula 21/08
 
 Aula 11/09
 interface é publica e asbtrato, não pode ter atributo
+
+Aula 18/09
+
+Comandos usados para diagrama de classes
+abstract
+class
+extends
+implements
+instanceof
+interface
+new
+private = atributo ou metodo que uma subclasse não pode usar
+public
+protected = atributo ou metodo que uma subclasse pode usar
+public
+super
+this
+
+
+Comandos Novos
+assert = Verifica a veracidade das linhas do código, existe escondido no codigo
+Exemplo: int x = 0; se x não for 0 o programa para
+
+continue = usado para pular um execução do for
+Exemplo: pular um número de "i" do for, os comando n são executados com aquele valor e volta
+pro proximo do valor
+
+quinteto para tratar erros{
+try = usado para testar métodos que podem ter excessoes
+catch = captura a excessão enviada pelo try  
+finally
+throw
+throws
+}
+
+instanceof = testa se um atibuto faz parte de uma super classes
+exemplo = nome instanceof Pet
+
+native = usado para códigos que não são em java
+
+synchronized = como em java podemos criar um programa que pode executar diferentes coisas
+ao mesmo tempo, usamos o synchonized para que não execute as coisas em pararelo
+
+volatile = Serve para não deixar o atributo ser mandado por internet
+
+transient = Serve para deixar o atributo ser mandado por internet
+
+byte = int, float, double, long, char, boolean, short,
+
+static = basicamente faz com que seja criada aquela variavel estatica na memoria até
+encerrar o programa, String é um exemplo do funcionamento
+
+final = em uma classe proibe extensão (extends)
+        em um atributo faz com que uma variavel não possa ser alterada dps
+
+Anotações para a prova
+Enumeração
+Diagrama de classes
+Arraylist, com for 
+herança e polimorfismo(classe abstrata e interface)
+sobrecarga 

@@ -1,0 +1,45 @@
+Uma classe em java serve para representar objetos da vida real
+Um objeto serve como uma instancia da classe
+
+Link interessante com muito conteudo de java
+https://github.com/openjdk/jdk/tree/master/src/java.base/share/classes/java/lang
+
+A parte de baixo do diagrama de classes são os métodos q a classe pode utilizar 
+
+
+
+Exercicio para P1
+
+ANALISE DO DIAGRAMA DE CLASSES
+
+    As classes imovel (Super classe),residencial(subclasse) e comercial(subclasse), 
+    tem métodos construtores
+
+    A linha q conecta CadastroImoveis a imoveis, é um Arraylist, CadastroImoveis 
+    tem varios imoveis
+
+                0..*
+    Arraylist --->
+
+    A classe Geo é um atributo do tipo Geo
+
+    Na classe Residencial temos 4 métodos(seu método construtor, ToString, getPropietario
+    e calculaImposto)
+
+    imovel e calculaImposto estão em italico, portanto é abstrato ou (<<abstract>>) 
+    no diagrama 
+
+Questão 2 
+● neste diagrama pode ser observado polimorfismo?
+A classe pricipal puxa duas classes, o Arraylist do CadastroImoveis guarda coisas diferentes
+das outras duas subclasses
+
+● neste diagrama pode ser observado sobrecarga?
+Um metodo em q aparece em varias classes, Exemplo nesse codigo(ToString), aparece 
+em mais de uam classe, tendo assim diferentes atribuições ao ToString
+
+● neste diagrama pode ser observado sobrescrita? 
+
+
+
+
