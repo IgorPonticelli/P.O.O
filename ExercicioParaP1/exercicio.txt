@@ -36,10 +36,20 @@ das outras duas subclasses
 
 ● neste diagrama pode ser observado sobrecarga?
 Um metodo em q aparece em varias classes, Exemplo nesse codigo(ToString), aparece 
-em mais de uam classe, tendo assim diferentes atribuições ao ToString
+em mais de uam classe, tendo assim diferentes atribuições ao ToString.
+    Na classe CadastroImoveis há tbm sobrecarga no metodo listar.
+    sobrecarga == Polimorfismo de metodos == override
 
 ● neste diagrama pode ser observado sobrescrita? 
+O toString de imovel foi trocado e em CadastroImoveis veio de objects(javaLangObjects) 
+através de herança
+overwrite == substituição de uma metodo que vem por herança
 
+● qual a implicação da classe Imovel ser abstract?
+Eu não posso criar new imovel, posso criar metodos abstracts e comunicando ao proximo 
+programador que deve criar uma classe extends para poder mexer nela e não na original
 
+● qual a implicação do método calculaImposto ser abstract?
+Toda noca classe obrigatoriamente deve implementar esse metodo
 
 
