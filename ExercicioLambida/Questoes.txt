@@ -1,0 +1,42 @@
+Programação Orientada a Objetos
+
+
+Exercícios sobre Expressões Lambda
+1) Escreva programas em Java para cada um dos seguintes problemas, fazendo uso de
+expressões lambda e streams:
+List<String> list = Arrays.asList("alpha", "bravo", "charlie", "delta",
+"echo", "foxtrot");
+
+a) Iterar sobre uma lista de strings e imprimir o conteúdo no console.
+
+b) Criar uma string que consiste na concatenação das primeiras letras de cada string contida em
+uma lista de strings.
+
+c) Transformar uma lista de strings em strings maiúsculas (ou seja, alterando a lista original).
+
+d) Transformar uma lista de strings em uma nova lista de strings em maiúsculas (ou seja, sem
+alterar a original).
+
+e) Contar o número de elementos de uma lista de strings que possuem pelo menos seis
+caracteres.
+
+2) Baixe do Moodle as classes Funcionario e CadastroFuncionarios. Use estas classes nos
+exercícios que seguem. Em todos explore o uso de funções lambda e streams.
+
+a) Altere a classe CadastroFuncionarios de maneira que a mesma disponha de métodos para:
+• Retornar uma lista com todos os funcionários que recebem insalubridade e tem
+dependentes.
+• Retornar a quantidade de funcionários que tem dependentes.
+• Retornar o somatório do valor do salário bruto de todos os funcionários que ganham
+mais de 5000.
+• Aplicar uma taxa de aumento (ex: 1.2 para 20%) em todos os funcionários que recebem
+insalubridade.
+• Retornar uma lista de strings com nome e a matrícula de todos os funcionários cujo
+salário bruto é mais de 10% maior que o salário base.
+• Retornar a média salarial dos funcionários que não recebem insalubridade.
+• Retornar a lista com o nome dos funcionários cujos números de matrícula são menores
+que 500.
+• Retornar o salário líquido de um funcionário específico ou -1 se o funcionário não for
+encontrado.
+b) Escreva uma aplicação que cria uma instância de cadastro de funcionários e imprime o
+resultado de todas as consultas do exercício anterior.
