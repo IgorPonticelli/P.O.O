@@ -62,3 +62,132 @@ Aula 21/08
 
 Aula 11/09
 interface é publica e asbtrato, não pode ter atributo
+
+Aula 18/09
+
+Comandos usados para diagrama de classes
+abstract
+class
+extends
+implements
+instanceof
+interface
+new
+private = atributo ou metodo que uma subclasse não pode usar
+public
+protected = atributo ou metodo que uma subclasse pode usar
+public
+super
+this
+
+
+Comandos Novos
+assert = Verifica a veracidade das linhas do código, existe escondido no codigo
+Exemplo: int x = 0; se x não for 0 o programa para
+
+continue = usado para pular um execução do for
+Exemplo: pular um número de "i" do for, os comando n são executados com aquele valor e volta
+pro proximo do valor
+
+quinteto para tratar erros{
+try = usado para testar métodos que podem ter excessoes
+catch = captura a excessão enviada pelo try  
+finally
+throw
+throws
+}
+
+instanceof = testa se um atibuto faz parte de uma super classes
+exemplo = nome instanceof Pet
+
+native = usado para códigos que não são em java
+
+synchronized = como em java podemos criar um programa que pode executar diferentes coisas
+ao mesmo tempo, usamos o synchonized para que não execute as coisas em pararelo
+
+volatile = Serve para não deixar o atributo ser mandado por internet
+
+transient = Serve para deixar o atributo ser mandado por internet
+
+byte = int, float, double, long, char, boolean, short,
+
+static = basicamente faz com que seja criada aquela variavel estatica na memoria até
+encerrar o programa, String é um exemplo do funcionamento
+
+final = em uma classe proibe extensão (extends)
+        em um atributo faz com que uma variavel não possa ser alterada dps
+
+Anotações para a prova
+Enumeração
+Diagrama de classes
+Arraylist, com for 
+herança e polimorfismo(classe abstrata e interface)
+sobrecarga 
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+Aula 11/10
+
+Coleções
+        Framework - Estruturas de dados e algoritmos prontos
+Hash - Esmigalhar algo(Juntar muitas informações em uma coisa só)
+
+Tree - Ordena, através do compareTo e equals entre duas coisas
+
+Sort - Ordena Arraylist e nodo, implementando compareble(OBRIGATÓRIO)
+
+hashCode - identificador, informações juntas em uma só 
+
+HashSet<Elemento> = cria um conjunto de elementos
+TreeSet<elemento> = cria um conjunto de elementos, porem temos que implementar o comparable
+
+Set<Integer> uniao = new HashSet<>(s1);
+uniao.addAll(s2);
+
+
+Set<Integer> interseccao = new HashSet<>(s1);
+interseccao.retainAll(s2);
+
+Set<Integer> diferenca = new HashSet<>(s1);
+diferenca.removeAll(s2);
+
+MAPA - Não é colletion, armazena duas chaves, <string(chave), Integer(valor)> = botamos mais informações de um
+cadastro por exemplo 
+
+        OPERAÇÕES DE MAPA
+        • put(chave,valor) adiciona um valor associado a
+        respectiva chave
+
+        • remove(chave) remove e retorna o valor associado a
+        chave indicada
+
+        • get(chave) retorna o valor associado a chave
+        indicada
+        • containsKey
+        (chave) retorna true se o mapa contém
+        a chave
+
+        • containsValue(valor) retorna true se o mapa
+        contém o valor
+
+        • size() retorna o número de pares chave-valor
+        armazenados
+
+        • isEmpty() retorna true se o mapa está vazio
+
+        • keySet() retorna um conjunto contendo todas as
+        chaves do mapa
+
+        • values() retorna uma coleção contendo todos os
+        valores do mapa
+
+EXEMPLO DE MAPA 
+
+Map<String, Color> favoriteColors = new HashMap<String, Color>();
+
+favoriteColors.put("Juliet", Color.RED);
+favoriteColors.put(“Romeo", Color.GREEN);
+Color julietsFavoriteColor = favoriteColors.get("Juliet");
+favoriteColors.remove("Juliet");
+
+

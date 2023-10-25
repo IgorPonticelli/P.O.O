@@ -1,0 +1,67 @@
+Uma classe em java serve para representar objetos da vida real
+Um objeto serve como uma instancia da classe
+
+******Ver sobre forEach*********
+
+Link interessante com muito conteudo de java
+https://github.com/openjdk/jdk/tree/master/src/java.base/share/classes/java/lang
+
+A parte de baixo do diagrama de classes são os métodos q a classe pode utilizar 
+
+
+
+Exercicio para P1
+
+ANALISE DO DIAGRAMA DE CLASSES
+
+    As classes imovel (Super classe),residencial(subclasse) e comercial(subclasse), 
+    tem métodos construtores
+
+    A linha q conecta CadastroImoveis a imoveis, é um Arraylist, CadastroImoveis 
+    tem varios imoveis
+
+                0..*
+    Arraylist --->
+
+    A classe Geo é um atributo do tipo Geo
+
+    Na classe Residencial temos 4 métodos(seu método construtor, ToString, getPropietario
+    e calculaImposto)
+
+    imovel e calculaImposto estão em italico, portanto é abstrato ou (<<abstract>>) 
+    no diagrama 
+
+Questão 2 
+● neste diagrama pode ser observado polimorfismo?
+A classe pricipal puxa duas classes, o Arraylist do CadastroImoveis guarda coisas diferentes
+das outras duas subclasses
+
+● neste diagrama pode ser observado sobrecarga?
+Um metodo em q aparece em varias classes, Exemplo nesse codigo(ToString), aparece 
+em mais de uam classe, tendo assim diferentes atribuições ao ToString.
+    Na classe CadastroImoveis há tbm sobrecarga no metodo listar.
+    sobrecarga == Polimorfismo de metodos == override
+
+● neste diagrama pode ser observado sobrescrita? 
+O toString de imovel foi trocado e em CadastroImoveis veio de objects(javaLangObjects) 
+através de herança
+overwrite == substituição de uma metodo que vem por herança
+
+● qual a implicação da classe Imovel ser abstract?
+Eu não posso criar new imovel, posso criar metodos abstracts e comunicando ao proximo 
+programador que deve criar uma classe extends para poder mexer nela e não na original
+
+● qual a implicação do método calculaImposto ser abstract?
+Toda noca classe obrigatoriamente deve implementar esse metodo
+
+Questão 4
+. Crie uma interface chamada “Locavel” que deve possuir um método que retorna o
+valor do aluguel mensal. Crie as classes “ResidencialLocavel” e “ComercialLocavel”
+derivadas de “Comercial” e que implementam “Locavel”. Acrescente na classe
+“CadastroImoveis” um método capaz de retornar todos os imóveis locáveis.
+
+Criar duas classes em Comercial, que pode ou não ser locavel, criar um Arraylist dos
+imoveis que podem ou não ser locaveis com instanceof 
+
+
+
