@@ -6,7 +6,7 @@ import java.util.stream.Collectors;
 
 public class Aula25{
     public static void main(String [] aergs){
-
+        //1) Primeira questão
         List<String> list = Arrays.asList("alpha", "bravo", "charlie", "delta", "echo", "foxtrot");
 
         //a) Iterar sobre uma lista de strings e imprimir o conteúdo no console.
@@ -42,6 +42,9 @@ public class Aula25{
 
         List<String> c2 = list.stream().filter(a -> a.length() >= 6).collect(Collectors.toList());
         System.out.println(c2);
+
+        
+
         
     }
     
