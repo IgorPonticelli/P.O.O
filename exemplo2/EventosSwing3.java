@@ -16,7 +16,7 @@ public class EventosSwing3 extends JFrame {
         botaoOK = new JButton("OK");
         botaoLimpa = new JButton("Limpa");
         mensagem = new JLabel();
-        botaoOK.addActionListener(new ActionListener() {
+        botaoOK.addActionListener(new ActionListener() { //Cria uma classe que será usada só uams vez
             @Override
             public void actionPerformed(ActionEvent e) {
                 String texto = campoTexto.getText();
@@ -24,7 +24,7 @@ public class EventosSwing3 extends JFrame {
                 mensagem.setText("Texto digitado: " + texto);
             }
         });
-        botaoLimpa.addActionListener(new ActionListener() {
+        botaoLimpa.addActionListener(new ActionListener() { //Cria uma classe que será usada só uams vez
             @Override
             public void actionPerformed(ActionEvent e) {
                 campoTexto.setText("");

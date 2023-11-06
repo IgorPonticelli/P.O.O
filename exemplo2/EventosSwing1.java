@@ -29,11 +29,11 @@ public class EventosSwing1 extends JFrame {
     private class TratadorEventos implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
-            if (e.getSource() == botaoOK) {
+            if (e.getSource() == botaoOK) { //Pergunta se é o botão OK
                 String texto = campoTexto.getText();
                 mensagem.setForeground(Color.BLUE);
                 mensagem.setText("Texto digitado: " + texto);
-            } else if (e.getSource() == botaoLimpa) {
+            } else if (e.getSource() == botaoLimpa) { //Pergunta se é o botão Limpa
                 campoTexto.setText("");
             }
         }

@@ -27,6 +27,8 @@ public class Teste {
         janela.pack(); // Puxa um tamanho pré pronto
         janela.setLocationRelativeTo(null);
         janela.setVisible(true);
+
+        janela.setIconImage(null);
     }
     
 }

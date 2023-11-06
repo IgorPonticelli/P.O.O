@@ -18,11 +18,16 @@ public class EventosSwing2 extends JFrame implements ActionListener {
         mensagem = new JLabel();
         botaoOK.addActionListener(this);
         botaoLimpa.addActionListener(this);
-        getContentPane().setLayout(new FlowLayout());
+        getContentPane().setLayout(new FlowLayout()); // Cada 
         getContentPane().add(campoTexto);
         getContentPane().add(botaoOK);
         getContentPane().add(botaoLimpa);
         getContentPane().add(mensagem);
+        botaoLimpa.setForeground(Color.PINK);
+        botaoOK.setBackground(Color.RED);
+        campoTexto.setBackground(Color.RED);
+        mensagem.setBackground(Color.BLUE);
+
     }
     @Override
     public void actionPerformed(ActionEvent e) {

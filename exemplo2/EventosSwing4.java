@@ -18,7 +18,7 @@ public class EventosSwing4 extends JFrame {
         mensagem = new JLabel();
         botaoOK.addActionListener(e -> {
             String texto = campoTexto.getText();
-                mensagem.setForeground(Color.BLUE);
+                mensagem.setForeground(Color.RED);
                 mensagem.setText("Texto digitado: " + texto);
         });
         botaoLimpa.addActionListener(e -> {

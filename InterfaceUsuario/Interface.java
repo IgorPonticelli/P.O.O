@@ -10,7 +10,7 @@ public class Interface {
 
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         Container contentPane = frame.getContentPane();
-         contentPane.setLayout(new FlowLayout());//
+         contentPane.setLayout(new FlowLayout());//Cada componente sabe o seu tamanho
          //Container serve para agrupar e exibir componentes
         
         JLabel label = new JLabel("Olha só esse botão: ");
