@@ -1,0 +1,110 @@
+
+
+Coleções
+    Framework - Estruturas de dados e algoritmos prontos
+    Hash - Esmigalhar algo(Juntar muitas informações em uma coisa só)
+
+    Tree - Ordena, através do compareTo e equals entre duas coisas
+
+    Sort - Ordena Arraylist e nodo, implementando compareble(OBRIGATÓRIO)
+
+    hashCode - identificador, informações juntas em uma só 
+
+    HashSet<Elemento> = cria um conjunto de elementos
+    TreeSet<elemento> = cria um conjunto de elementos, porem temos que implementar o comparable
+
+    Set<Integer> uniao = new HashSet<>(s1);
+    uniao.addAll(s2);
+
+
+    Set<Integer> interseccao = new HashSet<>(s1);
+    interseccao.retainAll(s2);
+
+    Set<Integer> diferenca = new HashSet<>(s1);
+    diferenca.removeAll(s2);
+
+MAPA - Não é colletion, armazena duas chaves, <string(chave), Integer(valor)> = botamos mais informações de um
+    cadastro por exemplo 
+
+            OPERAÇÕES DE MAPA
+            • put(chave,valor) adiciona um valor associado a
+            respectiva chave
+
+            • remove(chave) remove e retorna o valor associado a
+            chave indicada
+
+            • get(chave) retorna o valor associado a chave
+            indicada
+            • containsKey
+            (chave) retorna true se o mapa contém
+            a chave
+
+            • containsValue(valor) retorna true se o mapa
+            contém o valor
+
+            • size() retorna o número de pares chave-valor
+            armazenados
+
+            • isEmpty() retorna true se o mapa está vazio
+
+            • keySet() retorna um conjunto contendo todas as
+            chaves do mapa
+
+            • values() retorna uma coleção contendo todos os
+            valores do mapa
+
+    EXEMPLO DE MAPA 
+
+    Map<String, Color> favoriteColors = new HashMap<String, Color>();
+
+    favoriteColors.put("Juliet", Color.RED);
+    favoriteColors.put(“Romeo", Color.GREEN);
+    Color julietsFavoriteColor = favoriteColors.get("Juliet");
+    favoriteColors.remove("Juliet");
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+INTERFACE GRÁFICA
+
+Exemplo 1 de código
+
+    package exemplo2;
+    import javax.swing.*;
+    import java.awt.*;
+    import java.awt.event.ActionEvent;
+    import java.awt.event.ActionListener;
+
+    public class EventosSwing4 extends JFrame {
+        private JTextField campoTexto; //Texto para digitar
+        private JButton botaoOK, botaoLimpa;
+        private JLabel mensagem; // Linha de texto
+        
+        public EventosSwing4() {
+            super("Eventos Swing 4"); //Cria um frame invisivel através do extends Frame na classe
+            setDefaultCloseOperation(EXIT_ON_CLOSE); // Ação de fechar a janela
+
+            Criação dos componentes
+
+            campoTexto = new JTextField(30);
+            botaoOK = new JButton("OK");
+            botaoLimpa = new JButton("Limpa");
+            mensagem = new JLabel();
+
+            botaoOK.addActionListener(e -> { // Através dp ActionListener, ele já puxa a ação ActionEvent
+                String texto = campoTexto.getText();
+                    mensagem.setForeground(Color.RED);
+                    mensagem.setText("Texto digitado: " + texto);
+            });
+            botaoLimpa.addActionListener(e -> { 
+                campoTexto.setText(""); // Seta o que foi digitado para vazio
+            });
+            getContentPane().setLayout(new FlowLayout());
+            getContentPane().add(campoTexto);
+            getContentPane().add(botaoOK);
+            getContentPane().add(botaoLimpa);
+            getContentPane().add(mensagem);
+        }
+    }
+
+
+
